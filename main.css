@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.navbar{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10%;
+    color: red;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbarImage{
+    width: 10vw;
+    height: 13vh;
+    left: 0;
+    top: 0;
+
+}
+
+.brand{
+    font-size: 3rem;
+    text-shadow: 3px 5px 7px rgb(255, 0, 0);
+}
+
+.menuIcon{
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 3rem;
+    text-shadow: 3px 5px 7px rgb(255, 0, 0);
+    
+}
+
+.menuIcon:hover{
+    font-size: 3.5rem;
+    color: white;
+}
+
+.modalMenu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.500);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 200;
+}
+
+.closeIcon{
+
+    color: red;
+    font-size: 2rem;
+    position: absolute;
+    top: 15vh;
+    right: 10%;
+
+}
+
+.closeIcon:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.modalMenu a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.modalMenu a:hover{
+    color: red;
+    font-size: 2.2rem;
+}
+
+.container section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 3rem;
+    text-shadow: 3px 5px 9px red;
+}
+
+.home{
+    background-color: red;
+    background-size: cover;
+    background-attachment: fixed;
+    gap: 30px;
+}
+
+.homeImage{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100px 100px 10px 100px;
+    border: 9px solid white;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 5px 7px 9px black;
+}
+
+.homeText{
+    font-size: 5rem;
+    color: white;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    text-shadow: 5px 7px 9px black;
+}
+
+.about{
+    background-image: url(https://picsum.photos/seed/99/900);
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+
+.contact{
+    background-image: url(https://picsum.photos/seed/999/900);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.showcase{
+    background-image: url(https://picsum.photos/seed/9999/900);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.rotateIcon{
+    font-size: 9rem;
+    color: white;
+    animation-name: rotate;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+}
+
+.alertAbout{
+    width: 100vw;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: red;
+    position: sticky;
+    top: 10vh;
+}
+
+@keyframes bottomToTop{
+    from{
+        transform: translateY(30vh);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg):
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}

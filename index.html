@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="belajar dom event">
+    <title>Domevent ZI9</title>
+
+</head>
+
+<body>
+
+    <div class="modalMenu" id='modalMenu'>
+
+        <span class="material-icons closeIcon" onclick="closeModal()"> close </span>
+
+        <a href="#home" onclick="closeModal()">Home</a>
+        <a href="#about" onclick="closeModal()">About</a>
+        <a href="#contact" onclick="closeModal()">Contact</a>
+        <a href="#showcase" onclick="closeModal()">Showcase</a>
+
+    </div>
+
+
+    <nav class="navbar">
+
+        <img src="./ZI9.png" alt="" class="navbarImage">
+        <span class="material-icons menuIcon" onclick="showModal()">double_arrow</span>
+
+    </nav>
+
+    <main class="container" id="home">
+        <section class="home" id="home">
+            <img src="./Banser.png" alt="foto saya sendiri" class="homeImage">
+
+            <h1 class="homeText"> Barisan Ansor Serbaguna <br /> Satkoryon Sukmajaya</h1>
+        </section>
+
+        <section class="about" id="about">
+            <span class="alertAbout">
+                Welcome To My Website
+            </span>
+            <h1 class="title">About</h1>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="title">Contact</h1>
+        </section>
+
+        <section class="showcase" id="showcase">
+            <span class="material-icons rotateIcon">autorenew</span>
+        </section>
+
+    </main>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
