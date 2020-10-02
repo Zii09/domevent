@@ -114,6 +114,7 @@ body{
 
 .home{
     flex-direction: column;
+    display: flex;
     justify-content: flex-start;
     background-color: red;
     gap: 40px;
@@ -132,7 +133,7 @@ body{
     height: 350px;
     object-fit: cover;
     object-position: center;
-    border-radius: 100px 100px 10px 100px;
+    border-radius: 90px;
     border: 9px solid white;
     animation-name: bottomToTop;
     animation-duration: 1s;
@@ -141,7 +142,7 @@ body{
 }
 
 .homeText{
-    font-size: 5rem;
+    font-size: 6.5rem;
     color: white;
     animation-name: bottomToTop;
     animation-duration: 1s;
@@ -212,9 +213,26 @@ body{
 }
 
 .showcase{
-    background-image: url(https://picsum.photos/seed/9999/900);
-    background-size: cover;
-    background-attachment: fixed;
+   flex-direction: column;
+   justify-content: center;
+   height: auto;
+}
+
+.wrapper_showcase{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.wrapper_showcase img{
+    transition-duration: 0.5s;
+    border-radius: 9px;
+}
+
+.wrapper_showcase img:hover{
+    border-radius: 300px;
+    cursor: grab;
 }
 
 .rotateIcon{
@@ -227,14 +245,15 @@ body{
 
 .alertAbout{
     width: 100vw;
-    height: 8vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     color: red;
     position: sticky;
-    top: 10vh;
+    top: 15vh;
+    z-index: 50;
 }
 
 @keyframes bottomToTop{
@@ -251,7 +270,7 @@ body{
 
 @keyframes rotate{
     from{
-        transform: rotate(0deg):
+        transform: rotate(0deg);
     }
 
     to{
